@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+   
+  
+    <title>{% block title %}MY DEmo{% endblock %}</title>
+    <style>
+        h1{
+            padding-left: 350px;
+        }
+        .nav{
+            display: flex;
+        }
+        .h{
+            padding-left: 5px;
+        }
+        .a{
+            padding-left: 45px;
+            
+        }
+        .l{
+            display: flex;
+           
+            padding-left: 45px;
+        }
+       a{
+        text-decoration: none;
+        color: darkorange;
+        
+       }
+       header{background-color: black; color: aliceblue;}
+        footer{background-color: rgb(17, 17, 17); color: rgb(233, 229, 230); padding: 15px;}
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Qura</h1>
+   <div class="nav">
+     <div class="h"><a href="/">Home</a></div>
+    <div class="a"> <a href="/Entrance">Entrance</a></div>
+    <div class="l"> <a href="/feedback">Feedback</a></div>
+   </div>
+   </header> 
+   {% block content %}
+
+    {% endblock %}
+
+

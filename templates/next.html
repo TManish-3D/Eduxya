@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}About page{% endblock %}
+{% block content %}
+<h2>Entrance Prep</h2>
+<form action="/Entrance" method="POST"> 
+   <label for="entrance">Choose a service:</label>
+<select id="entrance" name="entrance">
+  <option value="BSC CSIT">BSC CSIT</option>
+  <option value="BSC">BSC</option>
+  <option value="CMAT">CMAT</option>
+</select><br>
+<label for="name">Enter your Name:</label>
+    <input type="text" id="name"><br>
+    <label for="age">Enter your Grade:</label>
+<input type="number" id="grade" name="grade" step="any"><br>
+<label for="age">Enter your Phone no:</label>
+<input type="number" id="phone no" name="phone no"><br>
+    <input type="submit" value="submit">
+
+{% endblock %}
