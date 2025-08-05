@@ -18,6 +18,10 @@
             padding-left: 45px;
             
         }
+        .r{
+            padding-left: 45px;
+            
+        }
         .l{
             display: flex;
            
@@ -38,11 +42,23 @@
    <div class="nav">
      <div class="h"><a href="/">Home</a></div>
     <div class="a"> <a href="/Entrance">Entrance</a></div>
+    <div class="r"> <a href="/register">Register</a></div>
     <div class="l"> <a href="/feedback">Feedback</a></div>
    </div>
    </header> 
+   {% with messages = get_flashed_messages() %}
+   {% if messages %}
+   <ul style="color: rgb(255, 145, 0);">
+    {% for msg in messages %}
+    <li>{{msg}}</li>
+    {% endfor %}
+   </ul>
+   {% endif %}
+   {% endwith %}
+
    {% block content %}
 
     {% endblock %}
+    <footer>@Created by manish</footer>
 
 
